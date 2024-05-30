@@ -1,5 +1,7 @@
 import os
 
+# This environment variable can be set elsewhere like in .bashrc, etc. By setting it here
+# it means that breakpoint() uses ipdb instead of built-in pdb
 os.environ['PYTHONBREAKPOINT']="ipdb.set_trace"
 
 def main():
